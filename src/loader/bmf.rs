@@ -18,7 +18,7 @@ use bevy::{
     math::{URect, UVec2},
     platform::collections::HashMap,
 };
-use bevy_image::TextureAtlasLayout;
+use bevy::image::TextureAtlasLayout;
 use camino::Utf8Path;
 use strum::{AsRefStr, EnumIter, IntoEnumIterator as _, VariantNames};
 use thiserror::Error;

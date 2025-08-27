@@ -38,7 +38,7 @@ use bevy::{
 use bevy_asset_loader::asset_collection::AssetCollectionApp as _;
 use bevy_asset_loader::loading_state::config::ConfigureLoadingState as _;
 use bevy_asset_loader::loading_state::{LoadingState, LoadingStateAppExt as _};
-use bevy_image::TextureFormatPixelInfo as _;
+use bevy::image::TextureFormatPixelInfo as _;
 use bevy_image_font::ImageFontPlugin;
 use crossbeam_channel::{Receiver, Sender};
 use image::ImageFormat;

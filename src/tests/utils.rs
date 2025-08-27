@@ -7,7 +7,7 @@ use std::sync::LazyLock;
 
 use bevy::log::LogPlugin;
 use bevy::platform::collections::HashMap;
-use bevy_image::{CompressedImageFormats, ImageLoader};
+use bevy::image::{CompressedImageFormats, ImageLoader};
 use camino::Utf8Path;
 
 use super::*;

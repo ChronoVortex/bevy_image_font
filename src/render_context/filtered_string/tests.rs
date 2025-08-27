@@ -100,7 +100,7 @@ fn display_shows_filtered_text() {
 #[test]
 fn test_image_font_filter_string() {
     use bevy::asset::Handle;
-    use bevy_image::ImageSampler;
+    use bevy::image::ImageSampler;
 
     use crate::{ImageFont, ImageFontCharacter};
 

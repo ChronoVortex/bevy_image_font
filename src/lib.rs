@@ -8,7 +8,7 @@ use bevy::{
     platform::collections::{HashMap, HashSet},
     prelude::*,
 };
-use bevy_image::{Image, ImageSampler};
+use bevy::image::{Image, ImageSampler};
 use derive_setters::Setters;
 
 mod letter_spacing;

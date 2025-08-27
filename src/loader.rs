@@ -9,7 +9,7 @@ use bevy::{
     platform::collections::HashMap,
     prelude::*,
 };
-use bevy_image::{Image, ImageSampler, ImageSamplerDescriptor};
+use bevy::image::{Image, ImageSampler, ImageSamplerDescriptor};
 use camino::{FromPathError, Utf8Path, Utf8PathBuf};
 use ron::de::SpannedError;
 use serde::{Deserialize, Serialize};

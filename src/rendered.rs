@@ -20,7 +20,7 @@ use bevy::{
         render_resource::{Extent3d, TextureDimension, TextureFormat},
     },
 };
-use bevy_image::{Image, ImageSampler};
+use bevy::image::{Image, ImageSampler};
 use image::{
     GenericImage as _, GenericImageView as _, ImageBuffer, ImageError, Rgba,
     imageops::{self, FilterType},
