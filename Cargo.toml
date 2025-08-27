@@ -51,7 +51,7 @@ features = ["png"]
 optional = true
 
 [dev-dependencies]
-bevy = { version = "0.16", default-features = false, features = [
+bevy = { git = "https://github.com/ChronoVortex/bevy.git", branch = "release-0.16.0", default-features = false, features = [
     "bevy_asset",
     "bevy_render",
     "bevy_sprite",
