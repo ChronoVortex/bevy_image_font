@@ -2,7 +2,7 @@
 
 #![expect(clippy::absolute_paths, reason = "false positives")]
 
-use std::io::Error as IoError;
+use std::{io::Error as IoError, path::Path};
 
 use bevy::{
     asset::{AssetLoader, LoadContext, LoadDirectError, io::Reader},
@@ -429,11 +429,7 @@ impl AssetLoader for ImageFontLoader {
         let font_descriptor = read_and_validate_font_descriptor(reader).await?;
 
         // need the image loaded immediately because we need its size
-        let image_path = load_context
-            .path()
-            .parent()
-            .ok_or(ImageFontLoadError::MissingParentPath)?
-            .join(font_descriptor.image());
+        let image_path = Path::new("hpak://fnt/").join(font_descriptor.image());
         let Some(mut image) = load_context
             .loader()
             .immediate()
